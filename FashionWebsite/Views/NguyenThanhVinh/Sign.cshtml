@@ -1,0 +1,119 @@
+﻿@{
+    Layout = null;
+}
+<style type="text/css">
+    td {
+        height: 80px;
+        color: white
+    }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Ẩn thanh cuộn */
+        background-image: url(/Images/background-login.png);
+    }
+
+
+    .link-login {
+        color: #54a0ff;
+        text-decoration: none;
+        font-style: italic;
+    }
+
+        .link-login:hover {
+            color: red;
+        }
+</style>
+
+
+
+<html lang="en">
+<head>
+
+    <title>Form sign in CGV.vn</title>
+    <link rel=stylesheet type="text/css" href="~/CSS/sign.css">
+    <link rel="shortcut icon" type="image/png" href="~/Images/movie-strip.png">
+</head>
+
+<body>
+
+    <h4 style="color:red; text-align:center">@ViewBag.ThongBao</h4>
+
+    <div id="wrapper">
+
+
+        <form method="post" name="Sign" action="~/NguyenThanhVinh/Sign" id="form-login">
+            <table align="center">
+                <h2 style="text-align: center; color: #54a0ff">ĐĂNG KÝ</h2>
+                @using (Html.BeginForm())
+                {
+                    @Html.ValidationSummary(true)
+                    <tr>
+                        <td>Họ tên:</td>
+                        <td>
+                            @Html.TextBox("TenKH")
+                            @ViewData["Err1"]
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Tên đăng nhập:</td>
+                        <td>
+                            @Html.TextBox("TaiKhoan")
+                            @ViewData["Err2"]
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Mật khẩu:</td>
+                        <td>
+                            @Html.Password("MatKhau")
+
+                        </td>
+                        @if (ViewBag.Err3 != null)
+                        {
+                            @Html.Raw(ViewBag.Err3)
+                        }
+                    </tr>
+
+
+
+                    <tr>
+                        <td>Nhập lại mật khẩu:</td>
+                        <td>
+                            @Html.Password("XnMatkhau")
+                            @ViewBag.Err4
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Email:</td>
+                        <td>
+                            @Html.TextBox("Email")
+                            @ViewData["Err5"]
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"> <input type="submit" value="Đăng ký" class="form-submit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center; padding-top: 10px;">
+                            <a href="@Url.Action("Login", "NguyenThanhVinh")" class="link-login">
+                                Đã có tài khoản? Đăng nhập tại đây
+                            </a>
+
+                        </td>
+                    </tr>
+
+                }
+            </table>
+        </form>
+    </div>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

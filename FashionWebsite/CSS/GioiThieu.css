@@ -1,0 +1,85 @@
+﻿.rec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.container img {
+    width: 32%;
+}
+
+.rectangle {
+    display: inline-block;
+    border: 5px solid none;
+    width: 700px;
+    height: 180px;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột có kích thước bằng nhau */
+    background-color: snow;
+    font-weight: bold;
+}
+
+.khuyenmai1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột bằng nhau */
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+}
+
+    .khuyenmai1 img {
+        width: 100%; /* Chiếm toàn bộ chiều rộng của ô */
+        height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+        object-fit: cover; /* Đảm bảo ảnh lấp đầy toàn bộ ô */
+    }
+
+    .khuyenmai1 h1 {
+        text-align: center;
+        margin-top: 10px; /* Khoảng cách trên tiêu đề */
+    }
+
+.contai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promotion {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+    .promotion .rectangle {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+
+.text {
+    text-align: left;
+    width: 80%;
+    padding: 20px;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột bằng nhau */
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+}
+
+    .image img {
+        width: 100%; /* Đảm bảo ảnh chiếm 100% chiều rộng của cột */
+        height: auto; /* Duy trì tỷ lệ khung hình của ảnh */
+    }

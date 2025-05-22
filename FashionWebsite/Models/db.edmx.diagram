@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2da95297f6b0449ea0d840c4fc8d783c" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="ShopQuanAoModel.ChiTietDonHang" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopQuanAoModel.DanhGia" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopQuanAoModel.DanhMuc" Width="1.5" PointX="2.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopQuanAoModel.DonHang" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopQuanAoModel.KhachHang" Width="1.5" PointX="1.5" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopQuanAoModel.NguoiDung" Width="1.5" PointX="4.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopQuanAoModel.SanPham" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopQuanAoModel.TonKho" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <AssociationConnector Association="ShopQuanAoModel.FK__ChiTietDo__MaDon__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopQuanAoModel.FK__ChiTietDo__MaSan__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopQuanAoModel.FK__DanhGia__MaKhach__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopQuanAoModel.FK__DanhGia__MaSanPh__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopQuanAoModel.FK__DonHang__MaKhach__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopQuanAoModel.FK__TonKho__MaSanPha__5070F446" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

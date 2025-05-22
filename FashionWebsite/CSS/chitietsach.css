@@ -1,0 +1,404 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("~/Images/body.png");
+    background-repeat: repeat;
+    background-size: 1000px;
+}
+
+header {
+    width: auto;
+    height: 200px;
+    background-color: #000000a5;
+}
+
+#logo img {
+    margin-top: 10px;
+    width: 350px;
+    height: 150px;
+}
+
+#logo {
+    float: left;
+    margin-left: 50px;
+}
+
+#timkiem input.nuttim {
+    color: whitesmoke;
+    background-color: #54a0ff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+}
+
+    #timkiem input.nuttim:hover {
+        color: #54a0ff;
+        background-color: #2b2b2beb;
+    }
+
+
+#timkiem input.thanhtim {
+    margin-top: 5%;
+    margin-left: 190px;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.hotline {
+    color: yellow;
+    float: right;
+    margin-right: 150px;
+    margin-top: -80px;
+    font-family: monospace;
+}
+
+.number {
+    color: yellow;
+    float: right;
+    margin-right: 50px;
+    margin-top: -50px;
+    font-family: cursive;
+}
+
+
+#dn {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+    #dn ion-icon {
+        font-size: 35px;
+        color: white;
+    }
+
+#giohang {
+    display: flex;
+    width: 40px;
+    height: max-content;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+    #giohang .bg-soluong {
+        background-color: red;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        text-align: center;
+        color: white;
+    }
+
+#dn {
+    margin-right: 15px;
+}
+
+    #dn a {
+        color: #54a0ff;
+        font-size: 15px;
+    }
+
+        #dn a:hover {
+            color: #ffffff;
+        }
+
+nav {
+    clear: both;
+    background-color: rgba(28, 28, 28, 0.847);
+    padding: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.925);
+    transition: all 0.3s ease;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+    }
+
+    nav li {
+        float: left;
+        font-size: 20px;
+    }
+
+        nav li #dn a {
+            font-size: 20px;
+        }
+
+        nav li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 15px 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+            nav li a:hover {
+                background-color: #2b2b2beb;
+                color: #54a0ff;
+                border-radius: 15px;
+                box-shadow: 2px 2px 4px rgba(6, 6, 6, 0.564);
+            }
+
+    nav ul .pgt {
+        margin-left: 30px;
+    }
+
+.mid {
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.onmid {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .onmid .cautruc {
+        width: 100%;
+        height: auto;
+        border: 1px solid rgba(115, 74, 74, 0.993);
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 15px;
+    }
+
+        .onmid .cautruc .dau .chitietsach img {
+            width: 320px;
+            height: 467px;
+        }
+
+.dau {
+    border: 1px solid rgba(115, 74, 74, 0.993);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+    .dau .thongtin {
+        height: 514px;
+        padding: 20px;
+        margin-left: 363px;
+        border-top-right-radius: 10px;
+    }
+
+        .dau .thongtin .thongtinchitiet p {
+            font-size: 40px;
+            color: rgb(8, 8, 8);
+        }
+
+.thongtinchitiet {
+    font-size: 20px;
+}
+
+.gia p {
+    padding-left: 15px;
+    font-size: 40px;
+    color: red;
+}
+
+.onmid .cautruc .dau .thongtin .gia .nut {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+    .onmid .cautruc .dau .thongtin .gia .nut .mua {
+        color: white;
+        background-color: rgb(255, 0, 0);
+        font-size: 40px;
+        text-align: center;
+        width: 300px;
+        padding: 20px;
+        padding-top: 5px;
+        padding-bottom: 3px;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+    .onmid .cautruc .dau .thongtin .gia .nut .themvaogiohang {
+        float: right;
+        color: white;
+        background-color: rgb(255, 0, 0);
+        font-size: 40px;
+        text-align: center;
+        width: 500px;
+        padding: 20px;
+        padding-top: 5px;
+        padding-bottom: 3px;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .onmid .cautruc .dau .thongtin .gia .nut .mua:hover {
+        color: rgb(27, 24, 24);
+        background-color: rgba(226, 115, 30, 0.916);
+    }
+
+    .onmid .cautruc .dau .thongtin .gia .nut .themvaogiohang:hover {
+        color: rgb(27, 24, 24);
+        background-color: rgba(226, 115, 30, 0.916);
+    }
+
+.chitietsach {
+    float: left;
+    padding: 20px;
+}
+
+.gioithieu {
+    padding: 40px;
+    text-align: left;
+    font-size: 20px;
+    border: 1px solid rgba(115, 74, 74, 0.993);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+footer {
+    background-color: #000000;
+    /* màu nền của footer */
+    color: #fefefe;
+    /* màu chữ của footer */
+    padding: 30px 0;
+    padding: auto;
+    /* khoảng cách giữa phần nội dung và các mép của footer */
+}
+
+.container {
+    width: 90%;
+    /* độ rộng của phần nội dung footer */
+    margin: 0 auto;
+    /* căn giữa phần nội dung */
+}
+
+.row {
+    display: flex;
+    /* sử dụng flexbox để căn cỡ chiều rộng các cột */
+    flex-wrap: wrap;
+    /* cho phép các cột xuống dòng nếu cần */
+    justify-content: space-between;
+    /* căn các cột vào hai mép của footer */
+}
+
+.col-md-4 {
+    width: 21%;
+    /* chiều rộng của mỗi cột */
+}
+
+.thongbaocongthuong img {
+    margin-left: 50px;
+    width: 360px;
+    height: 140px;
+}
+
+h3 {
+    font-size: 20px;
+    /* cỡ chữ của tiêu đề */
+    margin-bottom: 20px;
+    /* khoảng cách giữa tiêu đề và phần nội dung */
+}
+
+ul {
+    list-style-type: none;
+    /* loại bỏ các dấu đầu dòng của danh sách */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    /* khoảng cách giữa các mục danh sách */
+}
+
+a {
+    color: #ffffff;
+    /* màu chữ của các liên kết */
+    text-decoration: none;
+    /* loại bỏ gạch chân */
+}
+
+    a:hover {
+        color: rgb(10, 10, 241);
+    }
+
+    a i {
+        color: #000;
+    }
+
+#d {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+    #d .r {
+        margin-right: 50px;
+        float: right;
+    }
+
+    #d .l {
+        margin-left: 50px;
+        float: left;
+    }
+
+#n {
+    padding: 15px;
+    padding-bottom: 10px;
+    width: 500%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+    #n img {
+        margin-left: 1px;
+        width: 250px;
+        height: auto
+    }
+
+
+
+.foot {
+    display: inline;
+    line-height: 70px;
+}
+
+.content img {
+    height: 95px;
+    width: 90px;
+    float: left;
+}
+
+.col-md-4 li {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}

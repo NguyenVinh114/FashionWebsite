@@ -1,0 +1,89 @@
+﻿@using FashionWebsite.Models;
+@using PagedList.Mvc;
+@model PagedList.PagedList<SanPham>
+@{
+    ViewBag.Title = "Giày";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+
+}
+
+<article class="mid">
+
+    <a class="tieude" href="~/NguyenThanhVinh/Giay"><b>Giày</b></a>
+
+    <menu>
+
+        <ul>
+            <div class="pgt">
+            <li><a href="@Url.Action("HaiHuoc", "TranTheKhai" , new {trangthai = "" })" class="btn-hai-huoc">Giày tây</a></li>
+            <li><a href="@Url.Action("KinhDi", "TranTheKhai" , new {trangthai = "" })" class="btn-hai-huoc">Giày canvas</a></li>
+            <li><a href="@Url.Action("HanhDong", "TranTheKhai", new {trangthai = "" })" class="btn-hai-huoc">Thể thao</a></li>
+            <li><a href="@Url.Action("TamLi", "TranTheKhai", new {trangthai = "" })" class="btn-hai-huoc">Boot</a></li>
+            </div>
+        </ul>
+
+    </menu>
+
+    <section class="onmid">
+
+        @foreach (var item in Model)
+        {
+            <div class="sach">
+                <a href="@Url.Action("ChiTietPhim","NguyenDongPhat", new {id = item.MaSanPham})"><img src="~/Images/giay/@item.HinhAnh"></a><br><br />
+                <a href="#"><h3 style="height:30px">@item.TenSanPham</h3></a>
+                <br />
+                <button>MUA</button>
+            </div>
+
+        }
+
+
+    </section>
+</article>
+<br />
+<br />
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("PartialGiay", new
+    {
+
+        page = page
+    }))
+</div>
+<style>
+    .MenuTrang ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .MenuTrang li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .MenuTrang a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+        font-size: 16px; /* Tăng kích thước font */
+    }
+
+        .MenuTrang a:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.1); /* Tăng kích thước khi hover */
+        }
+
+    .MenuTrang .active {
+        background-color: #337ab7;
+        color: white;
+    }
+</style>
+
+
+

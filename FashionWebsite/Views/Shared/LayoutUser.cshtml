@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TAKAS.vn</title>
+    <link rel="stylesheet" type="text/css" href="~/CSS/trangchu.css">
+    <link rel="stylesheet" type="text/css" href="~/CSS/cart.css">
+
+    <link href="~/CSS/Chitietphim-Datve-phat.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" type="image/png" href="~/Images/movie-strip.png">
+    <!----->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <!-- jQuery library -->
+    <!-- Latest compiled JavaScript -->
+    <!-- Biều đồ moris-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.js"></script>
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+    <header>
+        <div id="logo">
+            <br>
+            <img src="~/Images/logo.png" alt="" style="height: 140px; width: 300px;padding-top: 20px; padding-left: 50px; margin-top: -10px">
+
+
+        </div>
+        <div id="logo">
+            <h3 style="color: rgb(11, 145, 212);font-family:cursive">
+                <br><br>
+                <b>WE ARE GRAND</b>
+            </h3>
+            <h3 style="color:gold;margin-left: 110px;font-family:cursive">
+
+                <b>THE ONE ANH ONLY</b>
+            </h3>
+        </div>
+        <div id="timkiem">
+
+            <form style="padding-left: 300px;">
+                <input class="thanhtim" type="text" size="30" placeholder="Nhập phim cần tìm....">
+                <input class="nuttim" type="submit" value="Tìm">
+            </form>
+        </div>
+        <div class="hotline">
+            <br>
+            <h3 style="padding-right: 50px;">Hotline:</h3>
+        </div>
+        <div class="number">
+            <br>
+            <h3 style="padding-right: 50px;">0941.882.821</h3>
+        </div>
+
+    </header>
+
+    <nav style="margin: auto;">
+        <ul>
+            <div class="pgt" style="padding-left: 50px;">
+            <li><a href="@Url.Action("Index","NguyenThanhVinh")">Trang chủ</a></li>
+            <li><a href="@Url.Action("Ao","NguyenThanhVinh")">Áo</a></li>
+            <li><a href=@Url.Action("Quan","NguyenThanhVinh")>Quần</a></li>
+            <li><a href="@Url.Action("Giay","NguyenThanhVinh")">Giày</a></li>
+            <li><a href="@Url.Action("Dep","NguyenThanhVinh")">Dép</a></li>
+            <li><a href=@Url.Action("PhuKien","NguyenThanhVinh")>Phụ Kiện</a></li>
+            </div>
+            @Html.Action("PartialLogin", "NguyenThanhVinh")
+        </ul>
+    </nav>
+    @RenderBody();
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>VỀ CHÚNG TÔI</h3>
+                    <ul>
+                        <li><a href="#">Giới thiệu về TAKAS SHOP</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>TÀI KHOẢN CỦA TÔI</h3>
+                    <ul>
+                        <li><a href="#">Đăng nhập</a></li>
+                        <li><a href="#">Tạo tài khoản</a></li>
+                        <li><a href="#">Danh sách yêu thích</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                    <ul>
+                        <li><a href="#">Các câu hỏi thường gặp</a></li>
+                        <li><a href="#">Chính sách đổi/trả hàng</a></li>
+                        <li><a href="#">Tư vấn về sản phẩm </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
+                    <ul>
+                        <li><ion-icon name="logo-twitch"></ion-icon><a href="#">https://www.twitch.com/sunflowstore</a></li>
+                        <li><ion-icon name="logo-facebook"></ion-icon> <a href="#">https://www.facebook.com/sunflowstore</a></li>
+                        <li><ion-icon name="logo-chrome"></ion-icon> <a href="CGV/Index">www.CGV.vn</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="thongbaocongthuong">
+            <img src="~/Images/thongbaocongthuong.png">
+        </div>
+
+        <div id="d">
+            <p class="l">Sơ đồ trang | Chính sách và điều khoản | Chính sách bảo mật thông tin cá nhân|</p>
+            <p class="r">© Bản quyền thuộc về thương hiệu rạp CGV</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+
+
+</html>
+<script src="~/CSS/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

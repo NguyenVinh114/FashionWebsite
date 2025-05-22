@@ -1,0 +1,49 @@
+﻿
+@using FashionWebsite.Models;
+@if (Session["user"] != null)
+{
+    KhachHang kh = (KhachHang)Session["user"];
+
+
+    <li>
+        <div id="dn" style="padding-right: 50px;">
+            <ion-icon name="person"></ion-icon>
+            <a href="~/NguyenThanhVinh/ThongTinCaNhan">Xin chào: @kh.HoTen</a>
+            <a href="~/NguyenThanhVinh/Logout">Đăng xuất</a>
+
+
+            <div class="giohang">
+
+                <ion-icon name="ticket"></ion-icon>
+                <div class="bg-soluong">
+                    <div class="soluong"></div>
+                </div>
+            </div>
+            <a class="GH">Giỏ hàng</a>
+        </div>
+    </li>
+}
+else
+{
+    <li>
+        <div id="dn" style="padding-right: 50px;">
+            <ion-icon name="person"></ion-icon>
+            <a href="~/NguyenThanhVinh/Login">Đăng nhập</a>
+            <a href="~/NguyenThanhVinh/Sign">Đăng ký</a>
+
+
+            <div class="giohang">
+
+                <ion-icon name="cart"></ion-icon>
+                <div class="bg-soluong">
+                    <div class="soluong"></div>
+                </div>
+            </div>
+            <a class="GH">Giỏ hàng</a>
+        </div>
+    </li>
+
+}
+
+
+

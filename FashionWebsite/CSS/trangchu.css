@@ -1,0 +1,503 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/Images/body.png");
+    background-repeat: repeat;
+    background-size: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+.tieude {
+    flex-basis: 5%;
+    text-align: center;
+    font-size: 35px;
+    color: red;
+    text-shadow: 4px 2px 4px 5px #fefefeb4;
+    background-image: url("/Images/bg1.png");
+    padding: 1%;
+    padding-left: 36%;
+    padding-right: 36%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.427);
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
+}
+
+header {
+    width: auto;
+    height: 150px;
+    background-color: #000000a5;
+}
+
+#logo img {
+    margin-top: 10px;
+    width: 350px;
+    height: 150px;
+}
+
+#logo {
+    float: left;
+    margin-left: 50px;
+}
+
+#timkiem input.nuttim {
+    color: whitesmoke;
+    background-color: #54a0ff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+}
+
+    #timkiem input.nuttim:hover {
+        color: #54a0ff;
+        background-color: #2b2b2beb;
+    }
+
+
+#timkiem input.thanhtim {
+    margin-top: 5%;
+    margin-left: 50px;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.hotline {
+    color: yellow;
+    float: right;
+    margin-right: 150px;
+    margin-top: -80px;
+    font-family: monospace;
+}
+
+.number {
+    color: yellow;
+    float: right;
+    margin-right: 50px;
+    margin-top: -50px;
+    font-family: cursive;
+}
+
+
+#dn {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+    #dn ion-icon {
+        font-size: 35px;
+        color: white;
+    }
+
+.giohang {
+    display: flex;
+    width: 40px;
+    height: max-content;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+    .giohang .bg-soluong {
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        text-align: center;
+        color: white;
+    }
+
+.GH {
+    cursor: pointer;
+}
+
+
+
+#dn {
+    margin-right: 15px;
+}
+
+    #dn a {
+        color: #54a0ff;
+        font-size: 15px;
+    }
+
+        #dn a:hover {
+            color: #ffffff;
+        }
+
+nav {
+    /* clear: both; */
+    background-color: rgba(28, 28, 28, 0.847);
+    padding: 8px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.925);
+    transition: all 0.5s ease;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+    }
+
+    nav li {
+        float: left;
+        font-size: 20px;
+    }
+
+        nav li #dn a {
+            font-size: 20px;
+        }
+
+        nav li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 15px 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+            nav li a:hover {
+                background-color: #2b2b2beb;
+                color: #54a0ff;
+                border-radius: 15px;
+                box-shadow: 2px 2px 4px rgba(6, 6, 6, 0.564);
+            }
+
+    nav ul .pgt {
+        margin-left: 30px;
+    }
+
+
+.slide {
+    width: 1455px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 8px;
+    margin-bottom: -22px;
+    border-radius: 10px;
+    position: relative;
+}
+
+    .slide:hover .dieuhuong {
+        display: block;
+    }
+
+.chuyen-slide {
+    width: 15000px;
+    transition: all 0.5s;
+}
+
+    .chuyen-slide img {
+        width: 1455px;
+        height: 445px;
+        float: left;
+    }
+
+.dieuhuong {
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+    top: 45%;
+    padding-left: 25px;
+    display: none;
+}
+
+    .dieuhuong i:last-child {
+        position: relative;
+        left: 1320px;
+    }
+
+
+
+
+menu {
+    clear: both;
+    background-color: rgba(195, 7, 7, 0.847);
+    padding: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.925);
+}
+
+    menu ul {
+        list-style-type: none;
+        margin: 0px 100px;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+    }
+
+    menu li {
+        float: left;
+        font-size: 30px;
+    }
+
+        menu li #dn a {
+            font-size: 30px;
+        }
+
+        menu li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 15px 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+            menu li a:hover {
+                background-color: #ffa03bed;
+                color: #f5f5f5;
+                box-shadow: 2px 2px 4px rgba(246, 239, 239, 0.564);
+            }
+
+    menu ul .pgt {
+        margin: -12px 200px;
+    }
+
+.hinhqc {
+    width: auto;
+    margin: auto;
+    height: auto;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    box-shadow: 4px 2px 4px 4px #656464a4;
+}
+
+    .hinhqc img {
+        scroll-snap-align: center;
+    }
+
+article .mid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    background-image: url("hinhnengo.jpg");
+}
+
+.mid {
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+    .mid .sectionhinh img:hover {
+        box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.525);
+    }
+
+.onmid {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .onmid .sach {
+        width: 21%;
+        border: 1px solid rgba(115, 74, 74, 0.993);
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+        .onmid .sach:hover {
+            width: 21%;
+            border: 2px solid rgba(0, 0, 0, 0.463);
+            border-radius: 10px;
+            margin-left: 15px;
+            padding: 20px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.523);
+            margin-bottom: 10px;
+        }
+
+        .onmid .sach a h3 {
+            font-size: 20px;
+            text-align: center;
+            color: rgb(1, 0, 0);
+        }
+
+        .onmid .sach img {
+            width: 100%;
+            height: 62%;
+        }
+
+        .onmid .sach p {
+            text-align: center;
+            color: rgb(255, 0, 0);
+            font-size: 21px;
+        }
+
+
+        .onmid .sach button {
+            color: white;
+            background-color: rgb(255, 0, 0);
+            font-size: 25px;
+            align-items: center;
+            padding: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin-left: 15%;
+            font-family: Arial, sans-serif;
+        }
+
+            .onmid .sach button:hover {
+                color: rgb(27, 24, 24);
+                background-color: rgba(226, 115, 30, 0.916);
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+
+footer {
+    background-color: #000000;
+    /* màu nền của footer */
+    color: #fefefe;
+    /* màu chữ của footer */
+    padding: 30px 0;
+    padding: auto;
+    /* khoảng cách giữa phần nội dung và các mép của footer */
+}
+
+.container {
+    width: 90%;
+    /* độ rộng của phần nội dung footer */
+    margin: 0 auto;
+    /* căn giữa phần nội dung */
+}
+
+.row {
+    display: flex;
+    /* sử dụng flexbox để căn cỡ chiều rộng các cột */
+    flex-wrap: wrap;
+    /* cho phép các cột xuống dòng nếu cần */
+    justify-content: space-between;
+    /* căn các cột vào hai mép của footer */
+}
+
+.col-md-4 {
+    width: 21%;
+    /* chiều rộng của mỗi cột */
+}
+
+.thongbaocongthuong img {
+    margin-left: 50px;
+    width: 360px;
+    height: 140px;
+}
+
+h3 {
+    font-size: 20px;
+    /* cỡ chữ của tiêu đề */
+    margin-bottom: 20px;
+    /* khoảng cách giữa tiêu đề và phần nội dung */
+}
+
+ul {
+    list-style-type: none;
+    /* loại bỏ các dấu đầu dòng của danh sách */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    /* khoảng cách giữa các mục danh sách */
+}
+
+a {
+    color: #ffffff;
+    /* màu chữ của các liên kết */
+    text-decoration: none;
+    /* loại bỏ gạch chân */
+}
+
+    a:hover {
+        color: rgb(10, 10, 241);
+    }
+
+    a i {
+        color: #000;
+    }
+
+#d {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+    #d .r {
+        margin-right: 50px;
+        float: right;
+    }
+
+    #d .l {
+        margin-left: 50px;
+        float: left;
+    }
+
+#n {
+    padding: 15px;
+    padding-bottom: 10px;
+    width: 500%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+    #n img {
+        margin-left: 1px;
+        width: 250px;
+        height: auto
+    }
+
+
+
+.foot {
+    display: inline;
+    line-height: 70px;
+}
+
+.content img {
+    height: 95px;
+    width: 90px;
+    float: left;
+}
+
+.col-md-4 li {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
